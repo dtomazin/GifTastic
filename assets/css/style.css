@@ -1,0 +1,56 @@
+
+body {
+    background-color: rgba(66, 52, 52, 0.281)
+}
+
+
+.jumbotron {
+background-color: blueviolet;
+font-size: 10px;
+margin-right: 200px;
+
+
+}
+#gifs {
+    float: left;
+}
+
+
+
+#section1 {
+    float: left;
+}
+
+#section2 {
+   
+    float: left;
+    margin-top: 90px;
+}
+.right{
+    float: right;
+    font-weight: bold;
+}
+
+
+
+
+.footer {
+    width: 100%;
+    margin-top: 300px;
+    padding: 5px 0;
+    clear: both;
+    font-size: 12px;
+    color: #050202;
+    color: #140909;
+    text-align: center;
+    background: #666;
+    border-top: 8px solid #a8c4c26c;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #96DEDA, #50C9C3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #96DEDA, #50C9C3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
