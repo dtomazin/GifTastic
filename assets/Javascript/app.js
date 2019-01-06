@@ -1,7 +1,9 @@
 $(document).ready(function() {
     $('button').on('click', function() {
         var animal = $(this).data('name');
-        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=dc6zaTOxFJmzC&limit=15";
+        // api link search 
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=dc6zaTOxFJmzC&limit=20";
+        // ajax functionto retrieve url 
         $.ajax({
                 url: queryURL,
                 method: 'GET'
@@ -20,7 +22,7 @@ $(document).ready(function() {
                     animalImage.attr('src', results[i].images.fixed_height.url);
                     animalImage.attr('data-still', results[i].images.fixed_height_still.url)
                     animalImage.attr('data-animate', results[i].images.fixed_height.url)
-                        .attr('data-state', 'still');
+                    animalImage.attr('data-state', 'still');
                     animalDiv.append(p);
                     animalDiv.append(animalImage);
                     animalDiv.prependTo($('#gifs'));
